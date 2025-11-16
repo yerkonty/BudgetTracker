@@ -495,18 +495,18 @@ int main()
             baseline.setFillColor(COLOR_TEXT_DARK);
             window.draw(baseline);
 
-            drawCard(window,50,590,420,90,COLOR_CARD);
-            drawText(window, "Total Income:", 70, 610, 18, COLOR_TEXT_DARK,font);
-            drawText(window, formatMoney(budget.getTotalIncome()), 200, 610, 20, COLOR_SUCCESS,font);
+            drawCard(window,50,580,420,100,COLOR_CARD);
+            drawText(window, "Total Income:", 70, 600, 18, COLOR_TEXT_DARK,font);
+            drawText(window, formatMoney(budget.getTotalIncome()), 250, 600, 20, COLOR_SUCCESS,font);
 
-            drawText(window, "Total Expenses:",70,640,18,COLOR_TEXT_WHITE,font);
-            drawText(window, formatMoney(budget.getTotalExpenses()), 200, 640, 20, COLOR_DANGER, font);
+            drawText(window, "Total Expenses:",70,635,18,COLOR_TEXT_WHITE,font);
+            drawText(window, formatMoney(budget.getTotalExpenses()), 250, 635, 20, COLOR_DANGER, font);
 
-            drawCard(window, 500,590,450,90, COLOR_PRIMARY);
-            drawText(window, "Net Balance:", 520, 620, 24, COLOR_TEXT_WHITE, font);
-            drawText(window, formatMoney(budget.getBalance()), 700, 620, 28, COLOR_TEXT_WHITE,font);
+            drawCard(window, 500,580,450,100, COLOR_PRIMARY);
+            drawText(window, "Net Balance:", 530, 615, 24, COLOR_TEXT_WHITE, font);
+            drawText(window, formatMoney(budget.getBalance()), 730, 615, 32, COLOR_TEXT_WHITE,font);
 
-            } else {
+            } else {    
                 drawText(window, "No expenses yet. Add some transactions!", 300,300,20, COLOR_TEXT_DARK,font);
             }
             drawText(window, "Press 1 to return to Dashboard",50,630,16,COLOR_TEXT_DARK, font);
