@@ -3,7 +3,8 @@
 #include <sstream>
 
 
-Budget::Budget(const std::string& file) : dataFile(file) {
+Budget::Budget(const std::string& file) {
+    this->dataFile = file;
     loadFromFile();
 }
 

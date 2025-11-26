@@ -4,7 +4,11 @@
 
 
 Transaction::Transaction(TransactionType t, Category c, double amt, const std::string& desc)
-    : type (t), category(c), amount(amt), description(desc) {
+    {   
+        this->type = t;
+        this->category = c;                //member initializer list
+        this->amount = amt;
+        this->description = desc;
         timestamp = time(nullptr);
     }
 

@@ -9,8 +9,9 @@
                 "-g",
                 "${workspaceFolder}\\main.cpp",
                 "${workspaceFolder}\\Transaction.cpp",
+                "${workspaceFolder}\\Budget.cpp",
                 "-o",
-                "${workspaceFolder}\\BudgetTracker.exe"
+                "${workspaceFolder}\\BudgetTracker.exe",
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
