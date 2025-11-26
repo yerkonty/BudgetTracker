@@ -400,7 +400,7 @@ int main()
 
             break;
         }
-
+// 
         case Screen::TRANSACTIONS:
         {
             drawText(window, "TRANSACTION HISTORY", 50, 30, 36, COLOR_PRIMARY, font);
